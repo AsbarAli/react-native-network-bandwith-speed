@@ -1,0 +1,22 @@
+{
+  "name": "react-native-network-bandwith-speed",
+  "version": "1.0.2",
+  "description": "Check Internet speed in react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react-native-fetch-blob": "0.10.8"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "networkbandwith",
+    "internet-speed",
+    "Check-internet-connection",
+    "Asbar"
+  ],
+  "author": "asbar <loons.create@gmail.com> (http://example.com)",
+  "license": "ISC"
+}
