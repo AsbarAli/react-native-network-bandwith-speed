@@ -17,3 +17,12 @@ import NetWorkBandwith from 'react-native-network-bandwith-speed';
 
 ### props
 * ImageURI: Any image URI more than 1 Mb
+
+License
+----
+
+MIT
+
+
+**Free Software!**
+```
