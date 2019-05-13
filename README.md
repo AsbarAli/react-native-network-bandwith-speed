@@ -4,19 +4,24 @@ yarn add react-native-network-bandwith-speed
 
 or 
 
-npm install react-native-network-bandwith-speed
+npm install react-native-network-bandwith-speed --save
 
 ## Quick Start
 
-import NetWorkBandwith from 'react-native-network-bandwith-speed';
+import {measureConnectionSpeed} from 'react-native-network-bandwith-speed';
 ```
-  <NetWorkBandwith
-      imageURI="http://chandra.harvard.edu/graphics/resources/desktops/2006/1e0657_1680.jpg"
-    />
+  getNetworkBandwidth = async (): Promise<void> => {
+    try {
+      const networkSpeed: NetworkBandwidthTestResults = await measureConnectionSpeed();
+      console.log('networkSpeed',networkSpeed);    
+    } catch (err) {
+      console.log('err',err);  
+    }
+  }
 ```
 
 ### props
-* ImageURI: Any image URI more than 1 Mb
+* ImageURI: Any image URI of an 1.5 Mb image,if not provided default image URI would be used. 
 
 License
 ----

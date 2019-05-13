@@ -1,42 +1,25 @@
-import React from 'react';
-import type {
-  Element as ReactElement,
-} from 'react';
-import {Text} from 'react-native';
+import RNFetchBlob from 'react-native-fetch-blob';
 
-import {measureConnectionSpeed} from './NetworkBandwith';
+const downloadSizeInBits = 12000000;
+const metric = 'MBps';
+export  default const measureConnectionSpeed = (imageURIParam:string): any => {
 
-class NWBandwith extends React.PureComponent<any, any> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      networkSpeed: '',
-    };
-  }
+const imageURI= imageURIParam?imageURIParam:'https://drive.google.com/open?id=1MBHJXeRxMLLwHFpqbgTdEPsFArMM0cz7';
 
-  componentDidMount() {
-    this.measureNetworkBandwith(this.props.imageURI);
-  }
+  return new Promise((resolve, reject) => {
+    const startTime = (new Date()).getTime();
+    RNFetchBlob
+      .config({
+        fileCache: false,
+      })
+      .fetch('GET', imageURI, {})
+      .then((res) => {
+        const endTime = (new Date()).getTime();
+        const duration = (endTime - startTime)/ 1000;
+        const speed = (downloadSizeInBits/ (1024 * 1024 * duration));
 
-  measureNetworkBandwith = async (imageURI: string) : Promise<void> => {
-    try {
-      const networkSpeed = await measureConnectionSpeed(imageURI);
-      this.setState({
-        networkSpeed,
-      });
-    } catch (error) {
-      // handle error
-    }
-  }
-
-  render(): ReactElement<any> {
-    const {networkSpeed: {speed}} = this.state;
-    const content = speed? ( <Text>{speed}</Text>): ( <Text>Loading...</Text>);
-    return (
-      content
-    );
-  }
-}
-
-export default NWBandwith;
-
+        resolve({metric, speed});
+      })
+      .catch(reject);
+  });
+};
