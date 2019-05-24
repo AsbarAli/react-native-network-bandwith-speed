@@ -1,6 +1,6 @@
 {
   "name": "react-native-network-bandwith-speed",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Check Internet speed in react native",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,5 @@
   ],
   "author": "asbar <loons.create@gmail.com> (https://www.linkedin.com/in/asbar-ali-2babb110a/)",
   "contributors":["Suhail <77suhailrifky@gmail.com> (https://www.linkedin.com/in/suhail-rifky-43475a11b/?originalSubdomain=lk)"],
-  "license": "ISC"
+  "license": "MIT"
 }
