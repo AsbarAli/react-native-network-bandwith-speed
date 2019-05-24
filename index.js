@@ -2,7 +2,7 @@ import RNFetchBlob from 'react-native-fetch-blob';
 
 const downloadSizeInBits = 12000000;
 const metric = 'MBps';
-export  default const measureConnectionSpeed = (imageURIParam:string): any => {
+export const measureConnectionSpeed = (imageURIParam:string): any => {
 
 const imageURI= imageURIParam?imageURIParam:'https://drive.google.com/open?id=1MBHJXeRxMLLwHFpqbgTdEPsFArMM0cz7';
 
