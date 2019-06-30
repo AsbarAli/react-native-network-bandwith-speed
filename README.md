@@ -21,7 +21,7 @@ import { measureConnectionSpeed } from 'react-native-network-bandwith-speed';
   getNetworkBandwidth = async (): Promise<void> => {
     try {
       const networkSpeed: NetworkBandwidthTestResults = await measureConnectionSpeed();
-      console.log(networkSpeed);    
+      console.log(networkSpeed); // Network bandwidth speed 
     } catch (err) {
       console.log(err);  
     }
@@ -54,4 +54,3 @@ License
 
 MIT
 
-```
