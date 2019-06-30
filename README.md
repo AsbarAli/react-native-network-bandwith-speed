@@ -1,4 +1,5 @@
-## react-native-network-bandwith-speed
+## react-native-network-bandwidth-speed
+Easily check for network bandwidth speed in React Native
 
 ## Install
 
@@ -37,7 +38,7 @@ import { measureConnectionSpeed } from 'react-native-network-bandwith-speed';
 - [X] Add CONTRIBUTING.md
 - [ ] Add CODE_OF_CONDUCT.md
 - [ ] Add CHANGELOG
-- [ ] Speed tests for downlaod/upload
+- [ ] Speed tests for download/upload
 
 ## Contributor guidelines
 
