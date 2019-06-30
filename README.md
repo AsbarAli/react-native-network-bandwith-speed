@@ -15,8 +15,9 @@ $ yarn add react-native-network-bandwith-speed
 
 ## Quick Start
 
-import { measureConnectionSpeed } from 'react-native-network-bandwith-speed';
 ```
+import { measureConnectionSpeed } from 'react-native-network-bandwith-speed';
+
   getNetworkBandwidth = async (): Promise<void> => {
     try {
       const networkSpeed: NetworkBandwidthTestResults = await measureConnectionSpeed();
