@@ -1,13 +1,13 @@
 {
   "name": "react-native-network-bandwith-speed",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "Check Internet speed in react native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "react-native-fetch-blob": "0.10.8"
+    "rn-fetch-blob": "^0.10.16"
   },
   "keywords": [
     "react-native",
