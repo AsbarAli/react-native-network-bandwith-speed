@@ -13,8 +13,8 @@
     "react-native",
     "react",
     "networkbandwith",
-    "internet-speed",
-    "Check-internet-connection",
+    "download-speed",
+    "check-internet-download-speed",
     "Asbar",
     "Suhail"
   ],
