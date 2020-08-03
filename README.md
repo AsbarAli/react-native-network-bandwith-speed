@@ -1,8 +1,8 @@
 ## react-native-network-bandwidth-speed
 Easily check for network bandwidth speed in React Native
 
-## Pre-Requisite
 
+## NOTE
 To use this library, you need to install [RnFetchBlob](https://github.com/joltup/rn-fetch-blob) in your project.
 
 ## Install
